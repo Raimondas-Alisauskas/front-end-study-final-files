@@ -1,0 +1,40 @@
+1. Build a website as close as possible to the original copy
+
+// HTML and CSS
+2.   font-family: "Lato", serif;
+3.   max-width: 960px; (for conatiner class)
+4. Colors:
+     #00aca8
+     #674ea0
+     #FFF
+     #000
+5. Media queries:
+    ~ 776px and
+    ~ 550px
+p.s but you can set your own media queries depending on the elements' width and etc.
+
+
+// JavaScript
+6. button `Dropdown` should show 3 options
+7. button `Connect with us` should scroll down to the contact form
+8. When a user scrolls down more than 60px (>60px), in the right bottom corner
+icon up `^` should appear - which will scroll top on click
+
+ //Mobile
+ 9. at ~776px `Dropdown` button disapears and we show `nav-burger`
+ 10. When user clicks on `nav-burger` mobile menu should appear from top to bottom
+ and cover all page (see working example)
+11. In the mobile menu we add additional button `X` that will close the mobile menu
+
+
+...Good luck! :)
+
+Hints:
+
+1. Don't forget to include in HTML:
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+2. Don't forget to link your HTML to style.css and js.js
+3. Don't forget that you can check all sizes of every element in inspect window,
+also colors and other stuff!
+4. Icons: nav burger, envolope, up '^' can be found on fontawesome.com or you can use
+your own resources

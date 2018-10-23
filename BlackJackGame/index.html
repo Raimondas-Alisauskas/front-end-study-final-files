@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="main" class="jumbotron ">
+
+        <div class="jumbotron gameJumbo">
+            <div id="gameContainer" class="container customContainer ">
+                <div id="upperRow" class="row justify-content-center align-items-center">
+                    <div id="gameScreen" class="col-sm-9 col-md-6 col-lg-5 col-xl-4">
+                        <div id="dealerScreenRow" class="row text-center align-items-center">
+
+                            <div id="dealerCardsW" class="cards col-sm-7">
+                                <!-- <img class="cardImage" src="./cards/PNG/2H.png" style="left: 15px">
+                                <img class="cardImage" src="./cards/PNG/AD.png" style="left: 35px"> -->
+                                <div img></div>
+                            </div>
+                            <div id="dealerScoreW" class="scores col-sm-5">
+                                <p>Dealer's score:</p>
+                                <p id="dealerScore">0</p>
+                            </div>
+                        </div>
+                        <div id="player1ScreenRow" class="row text-center align-items-center displayCards">
+                            <div id="player1CardsW" class="cards col-sm-7">
+                                <!-- <img class="cardImage" src="./cards/PNG/QS.png" style="left: 15px">
+                                <img class="cardImage" src="./cards/PNG/7C.png" style="left: 35px"> -->
+                            </div>
+                            <div id="player1ScoreW" class="scores col-sm-5">
+                                <p>Player's score:</p>
+                                <p id="player1Score">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="actionScreen" class="col-sm-3 col-md-2 col-lg-2 col-xl-2 text-center vertical-align-center">
+                        <div>
+                            <p>Action:</p>
+                            <button id="takeCardBtn" type="button" class="btn btn-primary btn-sm">Take a card</button>
+                            <button id="passBtn" type="button" class="btn btn-primary btn-sm">Pass</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="jumbotron "> -->
+        <div id="secondComntainer" class="container jumbotron resultsJumbo">
+            <div id="lowerRow" class="row justify-content-center align-items-center">
+                <div id="resultsScreen" class="col-sm-9 col-md-6 col-lg-5 col-xl-4">
+                    <div id="resultsScreenRow" class="row align-items-center justify-content-center">
+                        <div id="resultsW" class="scores col-10 text-center">
+                            <p>Results: <span id="results"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="newGameScreen" class="vertical-align-center col-sm-3 col-md-2 col-lg-2 col-xl-2 text-center ">
+                    <button id="newGameBtn" type="button" class="btn btn-primary btn-sm">New Game</button>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</html>

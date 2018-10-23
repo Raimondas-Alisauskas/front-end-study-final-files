@@ -1,0 +1,54 @@
+p {
+    margin: 0;
+}
+
+#main {
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFG1SqkRJsc5mUkfwvuOZVwJZMWegp48MtABN0AGWJhhMgYNc6);
+}
+
+.results {
+    margin: auto 0px;
+}
+
+#dealerScreenRow,
+#player1ScreenRow {
+    height: 24vh;
+}
+
+#resultsScreenRow {
+    height: 100%;
+}
+
+#player1ScoreW,
+#dealerScoreW,
+#resultsW {
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
+.vertical-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    margin: 8px auto;
+}
+
+#dealerCardsW,
+#player1CardsW {
+    height: 80%;
+}
+
+.cardImage {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+.resultsJumbo,
+.gameJumbo {
+    opacity: 0.95;
+}

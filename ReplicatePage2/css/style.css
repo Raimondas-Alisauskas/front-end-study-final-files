@@ -1,0 +1,138 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+body .iconUp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
+body .iconUp:hover {
+  cursor: pointer;
+}
+body .iconUp i {
+  color: #00aca8;
+  opacity: 0.5;
+}
+body header {
+  border: 1px solid yellow;
+  background-image: url(../images/opensource_hero.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+  min-height: 560px;
+}
+body header .uperrDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+body header .uperrDiv nav {
+  display: flex;
+  justify-content: end;
+  height: 80px;
+}
+body header .uperrDiv nav ul li {
+  list-style-type: none;
+  font-weight: 400;
+  list-style: none;
+  cursor: pointer;
+}
+body header .uperrDiv nav ul li:hover h4 {
+  color: rgba(255, 255, 255, 0.7);
+}
+body header .uperrDiv nav ul li:hover .menuSmall {
+  transform-origin: top center;
+  transform: scaleY(1);
+  transition: 0.2s linear 50ms;
+}
+body header .uperrDiv nav ul li .menuSmall {
+  padding-inline-start: 0;
+  transform: scaleY(0);
+}
+body header .uperrDiv nav ul li .menuSmall li {
+  text-align: center;
+  width: 100%;
+  line-height: 20px;
+  padding: 12px 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+body header .uperrDiv nav ul li .menuSmall li:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+body .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+body .header-left {
+  padding: 30px;
+}
+body .header-right {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+body main {
+  max-width: 960px;
+  margin: 50px auto;
+}
+body .big-picture {
+  background-image: url(../images/img1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 448px;
+}
+body .small-pictures {
+  height: 448px;
+  display: flex;
+  justify-content: space-around;
+}
+body .small-pictures div div img {
+  align-self: auto;
+  background-size: cover;
+  height: 215px;
+  margin: 3px;
+}
+
+footer {
+  height: 700px;
+  background-color: #674ea0;
+  height: 700px;
+  color: #FFF;
+  padding: 60px;
+}
+
+.header-button,
+.footer-button {
+  background: #00aca8;
+  border-color: #00aca8;
+  color: #FFF;
+  text-align: center;
+  width: 250px;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.header-button:hover,
+.footer-button:hover {
+  opacity: 0.8;
+}
+
+.footer-button {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 776px) {
+  nav ul li:hover .menuSmall {
+    display: none;
+  }
+  nav ul li h4 {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

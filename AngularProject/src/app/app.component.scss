@@ -1,0 +1,14 @@
+.customHeader {
+    ul {
+        list-style-type: none;
+        margin-left: auto;
+        li {
+            display: inline;
+            margin: 0px 5px;
+            cursor: pointer;
+            &:hover {
+                color: rgb(16, 106, 241)
+            }
+        }
+    }
+}

@@ -1,0 +1,163 @@
+    $font-family: 'Lato',
+    sans-serif;
+    $tempBorder: 1px solid yellow;
+    $max-width: 960px;
+    $blue:#00aca8;
+    $magenta: #674ea0;
+    // Media queries:
+    // ~ 776px and
+    // ~ 550px
+    body {
+        font-family: $font-family;
+        // div {
+        //     border: $tempBorder;
+        // }
+        .iconUp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            &:hover {
+                cursor: pointer;
+            }
+            i {
+                color: $blue;
+                opacity: .5;
+            }
+        }
+        header {
+            border: $tempBorder;
+            background-image: url(../images/opensource_hero.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            // width: 100%;
+            background-position: center;
+            color: #FFF;
+            min-height: 560px;
+            .uperrDiv {
+                display: flex;
+                justify-content: space-between;
+                padding: 30px;
+                nav {
+                    display: flex;
+                    justify-content: end;
+                    height: 80px;
+                    ul {
+                        li {
+                            // text-align: center;
+                            list-style-type: none;
+                            font-weight: 400;
+                            list-style: none;
+                            cursor: pointer;
+                            &:hover h4 {
+                                color: hsla(0, 0%, 100%, .7);
+                            }
+                            &:hover .menuSmall {
+                                transform-origin: top center;
+                                transform: scaleY(1);
+                                transition: .2s linear 50ms;
+                            }
+                            .menuSmall {
+                                // position: absolute;
+                                // top: 100%;
+                                padding-inline-start: 0;
+                                transform: scaleY(0);
+                                li {
+                                    text-align: center;
+                                    width: 100%;
+                                    line-height: 20px;
+                                    padding: 12px 0;
+                                    list-style: none;
+                                    text-decoration: none;
+                                    font-size: 1.5rem;
+                                    &:hover {
+                                        color: hsla(0, 0%, 100%, .7);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+        .header-left {
+            padding: 30px;
+        }
+        .header-right {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+        }
+        main {
+            max-width: $max-width;
+            margin: 50px auto;
+        }
+        .big-picture {
+            background-image: url(../images/img1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 448px;
+        }
+        .small-pictures {
+            height: 448px;
+            display: flex;
+            justify-content: space-around;
+            div {
+                div {
+                    img {
+                        align-self: auto;
+                        background-size: cover;
+                        height: 215px;
+                        margin: 3px;
+                    }
+                }
+            }
+        }
+    }
+    
+    footer {
+        height: 700px;
+        background-color: $magenta;
+        height: 700px;
+        color: #FFF;
+        padding: 60px;
+    }
+    
+    .header-button,
+    .footer-button {
+        background: #00aca8;
+        border-color: #00aca8;
+        color: #FFF;
+        text-align: center;
+        width: 250px;
+        padding: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    
+    .footer-button {
+        margin-top: 100px;
+    }
+    
+    @media screen and (max-width: 776px) {
+        nav {
+            ul {
+                li {
+                    &:hover .menuSmall {
+                        display: none;
+                    }
+                    h4 {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
